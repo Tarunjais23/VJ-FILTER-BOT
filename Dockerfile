@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir vjbots/VJ-FILTER-BOT
-WORKDIR vjbots/VJ-FILTER-BOT
-COPY . vjbots/VJ-FILTER-BOT
+RUN mkdir VJBots/VJ-FILTER-BOT
+WORKDIR VJBots/VJ-FILTER-BOT
+COPY . VJBots/VJ-FILTER-BOT
 CMD ["python", "bot.py"]
